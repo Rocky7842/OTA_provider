@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Rocky7842",
+			"oem": "Samsung",
+			"device": "Galaxy Note10 5G",
+			"filename": "FILENAME",
+			"download": "https://sourceforge.net/projects/projects/crdroid-samsung-note10-5g/files/crdroid-9/FILENAME/download",
+			"timestamp": "TIMESTAMP",
+			"md5": "MD5",
+			"sha256": "SHA256",
+			"size": "SIZE",
+			"version": "VERSION",
+			"buildtype": "Monthly",
+			"forum": "https://forum.xda-developers.com/t/rom-unofficial-13-crdroid-9-for-galaxy-note10-5g-d1x-n971n-encryption.4530391/",
+			"gapps": "http://downloads.codefi.re/jdcteam/javelinanddart/gapps",
+			"firmware": "https://sourceforge.net/projects/firmware-samsung-note10-5g/files/",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "https://sourceforge.net/projects/projects/crdroid-samsung-note10-5g/files/crdroid-9/recovery.img/download",
+			"paypal": "",
+			"telegram": "",
+			"dt": "https://github.com/Rocky7842/android_device_samsung_d1x",
+			"common-dt": "https://github.com/Rocky7842/android_device_samsung_exynos9820-common",
+			"kernel": "https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
+		}
+	]
+}
