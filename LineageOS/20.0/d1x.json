@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": "1670586162",
+      "filename": "lineage-20.0-20221210-UNOFFICIAL-d1x.zip",
+      "id": "78604c05232cc878c97b480b00882b475744971b41ebd149ecab5c57aa7832af",
+      "romtype": "UNOFFICIAL",
+      "size": "865180074",
+      "url": "https://github.com/Rocky7842/OTA_provider/releases/download/d1x_lineage-20.0_1670586162/lineage-20.0-20221210-UNOFFICIAL-d1x.zip",
+      "version": "20.0"
+    }
+  ]
+}
