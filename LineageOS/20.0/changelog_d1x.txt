@@ -1,0 +1,20 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Galaxy Note10 5G (d1x)
+Device maintainers: Rocky7842
+
+===== ?? November, 2022 =====
+
+- Add OTA support
+- Synced with latest sources
+- Update translations
+- Some other fixes and improvements
+
+===== 14 December, 2022 =====
+
+- Initial Android 13 release
+- Configure aux camera for Aperture
+- Update security patch level to 2022-12-05
+- Update kernel to 4.14.296
+- Synced with latest sources
+- Update translations
