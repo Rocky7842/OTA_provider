@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Rocky7842",
+			"oem": "Xiaomi",
+			"device": "Mi 9 SE",
+			"filename": "FILENAME",
+			"download": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/FILENAME/download",
+			"timestamp": "TIMESTAMP",
+			"md5": "MD5",
+			"sha256": "SHA256",
+			"size": "SIZE",
+			"version": "VERSION",
+			"buildtype": "Monthly",
+			"forum": "https://forum.xda-developers.com/t/rom-unofficial-13-crdroid-9-for-mi-9-se-grus-encryption.4533353/",
+			"gapps": "http://downloads.codefi.re/jdcteam/javelinanddart/gapps",
+			"firmware": "https://androidfilehost.com/?fid=2981970449027569929",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/recovery.img/download",
+			"paypal": "",
+			"telegram": "",
+			"dt": "https://github.com/Rocky7842/android_device_xiaomi_grus",
+			"common-dt": "",
+			"kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+		}
+	]
+}

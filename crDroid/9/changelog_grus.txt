@@ -1,0 +1,21 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Mi 9 SE (grus)
+Device maintainers: Rocky7842
+
+===== ?? November, 2022 =====
+
+- Add OTA support
+- Synced with latest sources
+- Update translations
+- Some other fixes and improvements
+
+===== 24 December, 2022 =====
+
+- Initial Android 13 release
+- Add Smart Charging
+- Adjust the position of UDFPS animation
+- Update security patch level to 2022-12-05
+- Update kernel to 4.9.333
+- Synced with latest sources
+- Update translations
