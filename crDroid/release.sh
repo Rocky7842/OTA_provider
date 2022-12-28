@@ -29,7 +29,7 @@ if [ "$DEVICE" = "d1x" ] ; then
             --arg oem "Samsung" \
             --arg device "Galaxy Note10 5G" \
             --arg filename $FILENAME \
-            --arg download "https://sourceforge.net/projects/$PROJECT/files/crdroid-9/$ROM/download" \
+            --arg download "https://sourceforge.net/projects/$PROJECT/files/crdroid-9/$FILENAME/download" \
             --arg timestamp $TIMESTAMP \
             --arg md5 $MD5 \
             --arg sha256 $SHA256 \
@@ -56,7 +56,7 @@ elif [ "$DEVICE" = "grus" ] ; then
             --arg oem "Xiaomi" \
             --arg device "Mi 9 SE" \
             --arg filename $FILENAME \
-            --arg download "https://sourceforge.net/projects/$PROJECT/files/crdroid-9/$ROM/download" \
+            --arg download "https://sourceforge.net/projects/$PROJECT/files/crdroid-9/$FILENAME/download" \
             --arg timestamp $TIMESTAMP \
             --arg md5 $MD5 \
             --arg sha256 $SHA256 \
