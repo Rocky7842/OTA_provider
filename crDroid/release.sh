@@ -87,4 +87,4 @@ git push origin main -f
 
 SERVER="rocky7842@frs.sourceforge.net"
 echo "login to $SERVER"
-rsync -e ssh $ROM $SERVER:/home/frs/project/$PROJECT/crdroid-$VERSION/
+rsync -e ssh $ROM $SERVER:/home/frs/project/$PROJECT/crdroid-$MAINVERSION/
