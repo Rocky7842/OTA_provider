@@ -1,24 +1,27 @@
 #!/bin/bash
 
 if [ -z "$1" ] ; then
-    echo "Usage: $0 <ota zip>"
+    echo "Usage: $0 <ota zip> <json of the build>"
     exit 1
 fi
 
 ROM="$1"
+OLDJSON="$2"
 
 METADATA=$(unzip -p "$ROM" META-INF/com/android/metadata)
 SDK_LEVEL=$(echo "$METADATA" | grep post-sdk-level | cut -f2 -d '=')
-TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d "-" )
+TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d '-' )
 
 FILENAME=$(basename $ROM)
 DEVICE=$(echo $FILENAME | cut -f4 -d '-')
 DATE=$(echo $FILENAME | cut -f3 -d '-')
 SIZE=$(du -b $ROM | cut -f1 -d '	')
-VERSION=$(echo $FILENAME | cut -f5 -d '-' | cut -c 1 --complement)
-echo "$VERSION"
+
+MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
+SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
+VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
+
 MAINVERSION=$(echo $VERSION | cut -c 1)
-echo "$MAINVERSION"
 
 if [ "$DEVICE" = "d1x" ] ; then
     PROJECT="crdroid-samsung-note10-5g"
@@ -29,8 +32,8 @@ if [ "$DEVICE" = "d1x" ] ; then
             --arg filename $FILENAME \
             --arg download "https://sourceforge.net/projects/$PROJECT/files/crdroid-9/$ROM/download" \
             --arg timestamp $TIMESTAMP \
-            --arg md5 "" \
-            --arg sha256 "" \
+            --arg md5 $MD5 \
+            --arg sha256 $SHA256 \
             --arg size $SIZE \
             --arg version $VERSION \
             --arg buildtype "Monthly" \
