@@ -20,7 +20,6 @@ SIZE=$(du -b $ROM | cut -f1 -d '	')
 MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
 SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
 VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
-
 MAINVERSION=$(echo $VERSION | cut -c 1)
 
 if [ "$DEVICE" = "d1x" ] ; then
@@ -37,7 +36,7 @@ if [ "$DEVICE" = "d1x" ] ; then
             --arg size $SIZE \
             --arg version $VERSION \
             --arg buildtype "Monthly" \
-            --arg forum "https://forum.xda-developers.com/t/rom-unofficial-13-crdroid-9-for-galaxy-note10-5g-d1x-n971n-encryption.4530391/" \
+            --arg forum "https://forum.xda-developers.com/t/4530391/" \
             --arg gapps "http://downloads.codefi.re/jdcteam/javelinanddart/gapps" \
             --arg firmware "https://sourceforge.net/projects/firmware-samsung-note10-5g/files/" \
             --arg modem "" \
@@ -65,7 +64,7 @@ elif [ "$DEVICE" = "grus" ] ; then
             --arg size $SIZE \
             --arg version $VERSION \
             --arg buildtype "Monthly" \
-            --arg forum "https://forum.xda-developers.com/t/rom-unofficial-13-crdroid-9-for-mi-9-se-grus-encryption.4533353/" \
+            --arg forum "https://forum.xda-developers.com/t/4533353/" \
             --arg gapps "http://downloads.codefi.re/jdcteam/javelinanddart/gapps" \
             --arg firmware "https://androidfilehost.com/?fid=2981970449027569929" \
             --arg modem "" \
