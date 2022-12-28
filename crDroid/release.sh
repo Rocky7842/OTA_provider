@@ -21,7 +21,7 @@ MAINVERSION=$(echo $VERSION | cut -c 1)
 echo "$MAINVERSION"
 
 if [ "$DEVICE" = "d1x" ] ; then
-    PROJECT="lineageos-samsung-note10-5g"
+    PROJECT="crdroid-samsung-note10-5g"
 
     response=$(jq -n --arg maintainer "Rocky7842" \
             --arg oem "Samsung" \
@@ -57,4 +57,4 @@ git push origin main -f
 
 SERVER="rocky7842@frs.sourceforge.net"
 echo "login to $SERVER"
-rsync -e ssh $ROM $SERVER:/home/frs/project/$PROJECT/lineage-$VERSION/
+rsync -e ssh $ROM $SERVER:/home/frs/project/$PROJECT/crdroid-$VERSION/
