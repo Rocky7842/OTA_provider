@@ -19,9 +19,8 @@ ID=$(echo ${TIMESTAMP}${DEVICE}${SDK_LEVEL} | sha256sum | cut -f 1 -d ' ')
 SIZE=$(du -b $ROM | cut -f1 -d '	')
 TYPE=$(echo $FILENAME | cut -f4 -d '-')
 VERSION=$(echo $FILENAME | cut -f2 -d '-')
-RELASE_TAG=${DEVICE}_lineage-${VERSION}_${TIMESTAMP}
 
-URL="https://sourceforge.net/projects/lineageos-samsung-note10-5g/files/lineage-${RELASE_TAG}/${FILENAME}"
+URL="https://sourceforge.net/projects/lineageos-samsung-note10-5g/files/lineage-${VERSION}/${FILENAME}/download"
 
 response=$(jq -n --arg datetime $TIMESTAMP \
         --arg filename $FILENAME \
