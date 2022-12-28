@@ -3,7 +3,7 @@ Build type: Monthly
 Device: Mi 9 SE (grus)
 Device maintainers: Rocky7842
 
-===== ?? November, 2022 =====
+===== 28 December, 2022 =====
 
 - Add OTA support
 - Synced with latest sources
