@@ -1,28 +1,28 @@
 {
-	"response": [
-		{
-			"maintainer": "Rocky7842",
-			"oem": "Xiaomi",
-			"device": "Mi 9 SE",
-			"filename": "FILENAME",
-			"download": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/FILENAME/download",
-			"timestamp": "TIMESTAMP",
-			"md5": "MD5",
-			"sha256": "SHA256",
-			"size": "SIZE",
-			"version": "VERSION",
-			"buildtype": "Monthly",
-			"forum": "https://forum.xda-developers.com/t/rom-unofficial-13-crdroid-9-for-mi-9-se-grus-encryption.4533353/",
-			"gapps": "http://downloads.codefi.re/jdcteam/javelinanddart/gapps",
-			"firmware": "https://androidfilehost.com/?fid=2981970449027569929",
-			"modem": "",
-			"bootloader": "",
-			"recovery": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/recovery.img/download",
-			"paypal": "",
-			"telegram": "",
-			"dt": "https://github.com/Rocky7842/android_device_xiaomi_grus",
-			"common-dt": "",
-			"kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
-		}
-	]
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 9 SE",
+      "filename": "crDroidAndroid-13.0-20221228-grus-v9.0.zip",
+      "download": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/crDroidAndroid-13.0-20221228-grus-v9.0.zip/download",
+      "timestamp": "1671871570",
+      "md5": "31edb554de3b4658c96e546556e32aac",
+      "sha256": "80c76a1a93f8364bd90207a422f4032ec13c64063d8a8c328e58210eab266955",
+      "size": "1379372647",
+      "version": "9.0",
+      "buildtype": "Monthly",
+      "forum": "https://forum.xda-developers.com/t/4533353/",
+      "gapps": "http://downloads.codefi.re/jdcteam/javelinanddart/gapps",
+      "firmware": "https://androidfilehost.com/?fid=2981970449027569929",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://sourceforge.net/projects/crdroid-xiaomi-9-se/files/crdroid-9/recovery.img/download",
+      "paypal": "",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_grus",
+      "common-dt": "",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    }
+  ]
 }
