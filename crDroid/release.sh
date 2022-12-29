@@ -26,7 +26,6 @@ MAINTAINER="Rocky7842"
 PAYPAL=""
 TELEGRAM=""
 
-
 if [ "$CODENAME" = "d1x" ] ; then
     PROJECT="crdroid-samsung-note10-5g"
     OEM="Samsung"
@@ -39,7 +38,7 @@ if [ "$CODENAME" = "d1x" ] ; then
     RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_samsung_d1x"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_samsung_exynos9820-common"
-    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
 elif [ "$CODENAME" = "grus" ] ; then
     PROJECT="crdroid-xiaomi-9-se"
     OEM="Xiaomi"
@@ -52,35 +51,34 @@ elif [ "$CODENAME" = "grus" ] ; then
     RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_grus"
     COMMON_DEVICETREE=""
-    KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
-    
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
 GAPPS="http://downloads.codefi.re/jdcteam/javelinanddart/gapps"
 
-response=$(jq -n --arg maintainer $MAINTAINER \
-        --arg oem $OEM \
-        --arg device $DEVICE \
-        --arg filename $FILENAME \
-        --arg download $DOWNLOAD \
-        --arg timestamp $TIMESTAMP \
-        --arg md5 $MD5 \
-        --arg sha256 $SHA256 \
-        --arg size $SIZE \
-        --arg version $VERSION \
-        --arg buildtype $BUILDTYPE \
-        --arg forum $FORUM \
-        --arg gapps $GAPPS \
-        --arg firmware $FIRMWARE \
-        --arg modem $MODEM \
-        --arg bootloader $BOOTLOADER \
-        --arg recovery $RECOVERY \
-        --arg paypal $PAYPAL \
-        --arg telegram $TELEGRAM \
-        --arg dt $DEVICETREE \
-        --arg common-dt $COMMON_DEVICETREE \
-        --arg kernel $KERNEL \
+response=$(jq -n --arg maintainer "$MAINTAINER" \
+        --arg oem "$OEM" \
+        --arg device "$DEVICE" \
+        --arg filename "$FILENAME" \
+        --arg download "$DOWNLOAD" \
+        --arg timestamp "$TIMESTAMP" \
+        --arg md5 "$MD5" \
+        --arg sha256 "$SHA256" \
+        --arg size "$SIZE" \
+        --arg version "$VERSION" \
+        --arg buildtype "$BUILDTYPE" \
+        --arg forum "$FORUM" \
+        --arg gapps "$GAPPS" \
+        --arg firmware "$FIRMWARE" \
+        --arg modem "$MODEM" \
+        --arg bootloader "$BOOTLOADER" \
+        --arg recovery "$RECOVERY" \
+        --arg paypal "$PAYPAL" \
+        --arg telegram "$TELEGRAM" \
+        --arg dt "$DEVICETREE" \
+        --arg common-dt "$COMMON_DEVICETREE" \
+        --arg kernel "$KERNEL" \
         '$ARGS.named'
 )
 wrapped_response=$(jq -n --argjson response "[$response]" '$ARGS.named')
