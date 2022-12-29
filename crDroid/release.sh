@@ -52,6 +52,19 @@ elif [ "$CODENAME" = "grus" ] ; then
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_grus"
     COMMON_DEVICETREE=""
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_grus"
+elif [ "$CODENAME" = "xmsirius" ] ; then
+    PROJECT="crdroid-xiaomi-8-se"
+    OEM="Xiaomi"
+    DEVICE="Mi 8 SE"
+    BUILDTYPE="Monthly"
+    FORUM="https://forum.xda-developers.com/t/4533353/"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
+    DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_xmsirius"
+    COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"

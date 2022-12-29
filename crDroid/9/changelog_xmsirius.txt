@@ -1,0 +1,13 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Mi 8 SE (xmsirius)
+Device maintainers: Rocky7842
+
+===== 30 December, 2022 =====
+
+- Initial Android 13 release
+- Update security patch level to 2022-12-05
+- Add OTA support
+- Update kernel to 4.9.335
+- Synced with latest sources
+- Update translations
