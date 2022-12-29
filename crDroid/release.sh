@@ -51,7 +51,7 @@ elif [ "$CODENAME" = "grus" ] ; then
     RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_grus"
     COMMON_DEVICETREE=""
-    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_grus"
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
