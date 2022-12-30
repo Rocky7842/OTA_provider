@@ -35,7 +35,6 @@ if [ "$CODENAME" = "d1x" ] ; then
     FIRMWARE="https://sourceforge.net/projects/firmware-samsung-note10-5g/files/"
     MODEM=""
     BOOTLOADER=""
-    RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_samsung_d1x"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_samsung_exynos9820-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
@@ -48,7 +47,6 @@ elif [ "$CODENAME" = "grus" ] ; then
     FIRMWARE="https://androidfilehost.com/?fid=2981970449027569929"
     MODEM=""
     BOOTLOADER=""
-    RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_grus"
     COMMON_DEVICETREE=""
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_grus"
@@ -61,13 +59,13 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
     FIRMWARE=""
     MODEM=""
     BOOTLOADER=""
-    RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-9/recovery.img/download"
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_xmsirius"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
+RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/recovery.img/download"
 GAPPS="http://downloads.codefi.re/jdcteam/javelinanddart/gapps"
 
 response=$(jq -n --arg maintainer "$MAINTAINER" \
