@@ -1,25 +1,22 @@
 #!/bin/bash
 
 if [ -z "$1" ] ; then
-    echo "Usage: $0 <ota zip> <json of the build>"
+    echo "Usage: $0 <ota zip>"
     exit 1
 fi
 
 ROM="$1"
-OLDJSON="$2"
-
-METADATA=$(unzip -p "$ROM" META-INF/com/android/metadata)
-SDK_LEVEL=$(echo "$METADATA" | grep post-sdk-level | cut -f2 -d '=')
-TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d '-' )
 
 FILENAME=$(basename $ROM)
 CODENAME=$(echo $FILENAME | cut -f4 -d '-')
 DATE=$(echo $FILENAME | cut -f3 -d '-')
 SIZE=$(du -b $ROM | cut -f1 -d '	')
 
+OLDJSON=$(echo $ROM | sed 's/'$FILENAME'/'$CODENAME'.json/g' )
 MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
 SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
 VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
+TIMESTAMP=$(grep timestamp "$OLDJSON" | cut -c 17- | sed 's/,//g' )
 MAINVERSION=$(echo $VERSION | cut -c 1)
 
 MAINTAINER="Rocky7842"
