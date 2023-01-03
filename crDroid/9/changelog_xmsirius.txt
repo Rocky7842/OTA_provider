@@ -3,6 +3,15 @@ Build type: Monthly
 Device: Mi 8 SE (xmsirius)
 Device maintainers: Rocky7842
 
+===== 03 January, 2023 =====
+
+- Add Smart Charging
+- Configure aux camera for Aperture
+- Adjust color profile
+- Fix notification/charging led
+- Synced with latest sources
+- Update translations
+
 ===== 30 December, 2022 =====
 
 - Initial Android 13 release
