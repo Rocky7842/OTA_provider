@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1670586162",
-      "filename": "lineage-20.0-20221210-UNOFFICIAL-d1x.zip",
-      "id": "78604c05232cc878c97b480b00882b475744971b41ebd149ecab5c57aa7832af",
+      "datetime": "1673520180",
+      "filename": "lineage-20.0-20230112-UNOFFICIAL-d1x.zip",
+      "id": "6a7efd4cf81ee5720e6a5288ec2eb74bb52862772fc3e79f28e64a1a409e6699",
       "romtype": "UNOFFICIAL",
-      "size": "865180074",
-      "url": "https://github.com/Rocky7842/OTA_provider/releases/download/d1x_lineage-20.0_1670586162/lineage-20.0-20221210-UNOFFICIAL-d1x.zip",
+      "size": "897748524",
+      "url": "https://sourceforge.net/projects/lineageos-samsung-note10-5g/files/lineage-20.0/lineage-20.0-20230112-UNOFFICIAL-d1x.zip/download",
       "version": "20.0"
     }
   ]
