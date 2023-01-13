@@ -3,12 +3,14 @@ Build type: Monthly
 Device: Galaxy Note10 5G (d1x)
 Device maintainers: Rocky7842
 
-===== ?? November, 2022 =====
+===== 12 January, 2023 =====
 
 - Add OTA support
+- Add the ability to update firmware with ROM
+- Update security patch level to 2023-01-05
+- Ship with HVG7 firmware
 - Synced with latest sources
 - Update translations
-- Some other fixes and improvements
 
 ===== 14 December, 2022 =====
 
