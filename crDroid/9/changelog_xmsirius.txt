@@ -3,6 +3,16 @@ Build type: Monthly
 Device: Mi 8 SE (xmsirius)
 Device maintainers: Rocky7842
 
+===== 18 January, 2023 =====
+
+- Adjust status bar padding to fit more icons
+- Add MIUI poweroff charging animation
+- Enable burn-in protection
+- Adjust brightness settings
+- Update security patch level to 2023-01-05
+- Synced with latest sources
+- Update translations
+
 ===== 03 January, 2023 =====
 
 - Add Smart Charging
