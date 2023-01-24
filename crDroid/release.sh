@@ -12,11 +12,14 @@ CODENAME=$(echo $FILENAME | cut -f4 -d '-')
 DATE=$(echo $FILENAME | cut -f3 -d '-')
 SIZE=$(du -b $ROM | cut -f1 -d '	')
 
+METADATA=$(echo $ROM | sed 's/'$FILENAME'/ota_metadata/g' )
+TIMESTAMP=$(grep post-timestamp $METADATA | cut -f2 -d '=')
+rm $METADATA
+
 OLDJSON=$(echo $ROM | sed 's/'$FILENAME'/'$CODENAME'.json/g' )
 MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
 SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
 VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
-TIMESTAMP=$(grep timestamp "$OLDJSON" | cut -c 17- | sed 's/,//g' )
 MAINVERSION=$(echo $VERSION | cut -c 1)
 
 MAINTAINER="Rocky7842"
