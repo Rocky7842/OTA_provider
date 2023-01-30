@@ -14,7 +14,6 @@ SIZE=$(du -b $ROM | cut -f1 -d '	')
 
 METADATA=$(echo $ROM | sed 's/'$FILENAME'/ota_metadata/g' )
 TIMESTAMP=$(grep post-timestamp $METADATA | cut -f2 -d '=')
-rm $METADATA
 
 OLDJSON=$(echo $ROM | sed 's/'$FILENAME'/'$CODENAME'.json/g' )
 MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
