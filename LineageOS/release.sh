@@ -12,7 +12,6 @@ FILENAME=$(basename $ROM)
 METADATA=$(echo $ROM | sed 's/'$FILENAME'/ota_metadata/g' )
 SDK_LEVEL=$(grep post-sdk-level $METADATA | cut -f2 -d '=')
 TIMESTAMP=$(grep post-timestamp $METADATA | cut -f2 -d '=')
-rm $METADATA
 
 CODENAME=$(echo $FILENAME | cut -f5 -d '-' | cut -f1 -d".")
 ROMTYPE=$(echo $FILENAME | cut -f4 -d '-')
