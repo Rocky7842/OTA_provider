@@ -3,7 +3,30 @@ Build type: Monthly
 Device: Mi 8 SE (xmsirius)
 Device maintainers: Rocky7842
 
-===== 18 January, 2023 =====
+===== 3 April, 2023 =====
+
+- Security patch date is now 2023-03-05 (with QPR2 update).
+- Add Smart Pixels.
+- Add support for F2FS.
+- Improve UI smoothness.
+- Adjust AOD brightness.
+- Adjust vibration related stuffs.
+- Synced with latest sources.
+- Update translations.
+
+===== 14 February, 2023 =====
+
+- Security patch date is now 2023-02-05.
+- Vendor patch date is now 2022-05-01.
+- Fix DT2W.
+- Fix white tint on the lock screen, when using light theme.
+- Add hide cutout option under dev-option.
+- Apply patch for Gcam by default.
+- Prevent status bar icons from shifting. (Burn-in protection got disabled)
+- Synced with latest sources.
+- Update translations.
+
+===== 17 January, 2023 =====
 
 - Adjust status bar padding to fit more icons
 - Add MIUI poweroff charging animation
