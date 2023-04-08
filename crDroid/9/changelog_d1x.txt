@@ -3,6 +3,20 @@ Build type: Monthly
 Device: Galaxy Note10 5G (d1x)
 Device maintainers: Rocky7842
 
+===== 01 April, 2023 =====
+
+- Security patch date is now 2023-03-05 (with QPR2 update).
+- Update kernel to 4.14.309.
+- Add Smart Pixels.
+- Improve UI smoothness.
+- Fix boot animation being laggy at the first few frames.
+- Adjust auto brightness profile.
+- Update slow/fast charging threshold.
+- Undervolt the CPU by 100mV.
+- Other optimizations for the kernel.
+- Synced with latest sources
+- Update translations
+
 ===== 15 February, 2023 =====
 
 - Fix lock screen charging info
