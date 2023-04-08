@@ -3,6 +3,19 @@ Build type: Monthly
 Device: Mi 9 SE (grus)
 Device maintainers: Rocky7842
 
+===== 3 April, 2023 =====
+
+- Security patch date is now 2023-03-05 (with QPR2 update).
+- Add Smart Pixels.
+- Add support for F2FS.
+- Add display anti flicker (DC dimming).
+- Improve UI smoothness.
+- Adjust UDFPS dimming.
+- Adjust AOD brightness.
+- Adjust vibration related stuffs.
+- Synced with latest sources
+- Update translations
+
 ===== 15 January, 2023 =====
 
 - Adjust status bar padding to fit more icons
