@@ -14,3 +14,5 @@ if [ "$ROMNAME" = "lineage" ] ; then
 elif [ "$ROMNAME" = "crDroidAndroid" ] ; then
     sh ./crDroid/release.sh $ROM
 fi
+
+echo "Publish OTA update successfully."
