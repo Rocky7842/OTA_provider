@@ -3,6 +3,16 @@ Build type: Monthly
 Device: Mi 8 SE (xmsirius)
 Device maintainers: Rocky7842
 
+===== 8 May, 2023 =====
+
+- Security patch date is now 2023-05-05.
+- Improve UI smoothness.
+- Fix/adjust some audio related stuffs.
+- Adjust status bar padding to fit more icons.
+- Fix Google Assistant voice activation.
+- Synced with latest sources.
+- Update translations.
+
 ===== 21 April, 2023 =====
 
 - Security patch date is now 2023-04-05.
