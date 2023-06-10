@@ -3,6 +3,12 @@ Build type: Monthly
 Device: Galaxy Note10 5G (d1x)
 Device maintainers: Rocky7842
 
+===== 6 May, 2023 =====
+
+- Security patch date is now 2023-05-05.
+- Synced with latest sources.
+- Update translations.
+
 ===== 22 April, 2023 =====
 
 - Security patch date is now 2023-04-05.
