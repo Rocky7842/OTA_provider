@@ -3,6 +3,15 @@ Build type: Monthly
 Device: Galaxy Note10 5G (d1x)
 Device maintainers: Rocky7842
 
+===== 22 April, 2023 =====
+
+- Security patch date is now 2023-04-05.
+- Undervolt the CPU by 10% (was 100mV).
+- Undervolt the GPU by 10%.
+- Some other improvements.
+- Synced with latest sources.
+- Update translations.
+
 ===== 01 April, 2023 =====
 
 - Security patch date is now 2023-03-05 (with QPR2 update).
