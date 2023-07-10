@@ -3,6 +3,19 @@ Build type: Monthly
 Device: Mi 9 SE (grus)
 Device maintainers: Rocky7842
 
+===== 30 June, 2023 =====
+
+- Security patch date is now 2023-06-05 (with QPR3 update).
+- Update kernel to 4.9.337.
+- Fix some rendering issues.
+- Improve overall smoothness.
+- Fix & adjust AOD brightness.
+- Optimize DC dimming.
+- Migrate from smart charging to the newly introduced lineage health HAL.
+- Support battery charging bypass (was stop charging).
+- Disable falsely enabled pocket mode and other proximity features.
+- Other optimizations for kernel.
+
 ===== 9 May, 2023 =====
 
 - Security patch date is now 2023-05-05.
