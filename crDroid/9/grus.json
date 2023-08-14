@@ -21,8 +21,8 @@
       "paypal": "",
       "telegram": "",
       "dt": "https://github.com/Rocky7842/android_device_xiaomi_grus",
-      "common-dt": "",
-      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_grus"
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm710-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
     }
   ]
 }
