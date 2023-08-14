@@ -22,7 +22,7 @@ VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
 MAINVERSION=$(echo $VERSION | cut -c 1)
 
 MAINTAINER="Rocky7842"
-PAYPAL=""
+PAYPAL="https://www.paypal.com/paypalme/EricRocky7842"
 TELEGRAM=""
 
 if [ "$CODENAME" = "d1x" ] ; then
