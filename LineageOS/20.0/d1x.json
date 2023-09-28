@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1693127475",
-      "filename": "lineage-20.0-20230827-UNOFFICIAL-d1x.zip",
-      "id": "d8917a923ded0a84b311fc01082868a9cacc3da17ace1025debd35b3a57a8852",
+      "datetime": "1695892768",
+      "filename": "lineage-20.0-20230928-UNOFFICIAL-d1x.zip",
+      "id": "9616c46f0db877be6e4b8aab8365583f6ec0fbc3ec2d4bb12a81621609447faa",
       "romtype": "UNOFFICIAL",
-      "size": "935598329",
-      "url": "https://sourceforge.net/projects/lineageos-samsung-note10-5g/files/lineage-20.0/lineage-20.0-20230827-UNOFFICIAL-d1x.zip/download",
+      "size": "934150720",
+      "url": "https://sourceforge.net/projects/lineageos-samsung-note10-5g/files/lineage-20.0/lineage-20.0-20230928-UNOFFICIAL-d1x.zip/download",
       "version": "20.0"
     }
   ]
