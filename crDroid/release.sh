@@ -70,6 +70,8 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
     if [ "$MAINVERSION" = "9" ] ; then
         FORUM="https://forum.xda-developers.com/t/4535219/"
+    elif [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://forum.xda-developers.com/t/4639873/"
     else
         FORUM=""
     fi
