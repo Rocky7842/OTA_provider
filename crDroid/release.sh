@@ -79,7 +79,14 @@ fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
 RECOVERY="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/recovery.img/download"
-GAPPS="http://downloads.codefi.re/jdcteam/javelinanddart/gapps"
+
+if [ "$MAINVERSION" = "9" ] ; then
+    GAPPS="https://github.com/MindTheGapps/13.0.0-arm64/releases"
+elif [ "$MAINVERSION" = "10" ] ; then
+    GAPPS="https://github.com/MindTheGapps/14.0.0-arm64/releases"
+else
+    GAPPS="https://github.com/MindTheGapps"
+fi
 
 response=$(jq -n --arg maintainer "$MAINTAINER" \
         --arg oem "$OEM" \
