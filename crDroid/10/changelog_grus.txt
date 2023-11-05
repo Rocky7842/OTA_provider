@@ -1,0 +1,4 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Mi 9 SE (grus)
+Device maintainers: Rocky7842
