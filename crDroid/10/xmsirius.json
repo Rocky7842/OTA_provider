@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 8 SE",
+      "filename": "",
+      "download": "",
+      "timestamp": "",
+      "md5": "",
+      "sha256": "",
+      "size": "",
+      "version": "",
+      "buildtype": "Monthly",
+      "forum": "https://forum.xda-developers.com/t/4535219/",
+      "gapps": "http://downloads.codefi.re/jdcteam/javelinanddart/gapps",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://sourceforge.net/projects/crdroid-xiaomi-8-se/files/crdroid-9/recovery.img/download",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_xmsirius",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm710-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    }
+  ]
+}
