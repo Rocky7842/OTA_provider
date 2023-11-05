@@ -19,7 +19,7 @@ OLDJSON=$(echo $ROM | sed 's/'$FILENAME'/'$CODENAME'.json/g' )
 MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
 SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
 VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
-MAINVERSION=$(echo $VERSION | cut -c 1)
+MAINVERSION=$(echo $VERSION | cut -f1 -d '.')
 
 MAINTAINER="Rocky7842"
 PAYPAL="https://www.paypal.com/paypalme/EricRocky7842"
