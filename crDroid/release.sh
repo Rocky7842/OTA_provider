@@ -30,37 +30,49 @@ if [ "$CODENAME" = "d1x" ] ; then
     OEM="Samsung"
     DEVICE="Galaxy Note10 5G"
     BUILDTYPE="Monthly"
-    FORUM="https://forum.xda-developers.com/t/4530391/"
     FIRMWARE="https://sourceforge.net/projects/firmware-samsung-note10-5g/files/"
     MODEM=""
     BOOTLOADER=""
     DEVICETREE="https://github.com/Rocky7842/android_device_samsung_d1x"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_samsung_exynos9820-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
+    if [ "$MAINVERSION" = "9" ] ; then
+        FORUM="https://forum.xda-developers.com/t/4530391/"
+    else
+        FORUM=""
+    fi
 elif [ "$CODENAME" = "grus" ] ; then
     PROJECT="crdroid-xiaomi-9-se"
     OEM="Xiaomi"
     DEVICE="Mi 9 SE"
     BUILDTYPE="Monthly"
-    FORUM="https://forum.xda-developers.com/t/4533353/"
     FIRMWARE="https://androidfilehost.com/?fid=2981970449027569929"
     MODEM=""
     BOOTLOADER=""
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_grus"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    if [ "$MAINVERSION" = "9" ] ; then
+        FORUM="https://forum.xda-developers.com/t/4533353/"
+    else
+        FORUM=""
+    fi
 elif [ "$CODENAME" = "xmsirius" ] ; then
     PROJECT="crdroid-xiaomi-8-se"
     OEM="Xiaomi"
     DEVICE="Mi 8 SE"
     BUILDTYPE="Monthly"
-    FORUM="https://forum.xda-developers.com/t/4535219/"
     FIRMWARE=""
     MODEM=""
     BOOTLOADER=""
     DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_xmsirius"
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    if [ "$MAINVERSION" = "9" ] ; then
+        FORUM="https://forum.xda-developers.com/t/4535219/"
+    else
+        FORUM=""
+    fi
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
