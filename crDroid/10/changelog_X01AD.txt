@@ -1,0 +1,4 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: ZenFone Max M2 (X01AD)
+Device maintainers: Rocky7842
