@@ -54,6 +54,8 @@ elif [ "$CODENAME" = "grus" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
     if [ "$MAINVERSION" = "9" ] ; then
         FORUM="https:/xdaforums.com/t/4533353/"
+    elif [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4639898/"
     else
         FORUM=""
     fi
