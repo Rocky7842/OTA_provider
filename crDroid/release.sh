@@ -75,6 +75,22 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
     else
         FORUM=""
     fi
+elif [ "$CODENAME" = "X01AD" ] ; then
+    PROJECT="crdroid-asus-zenfone-max-m2"
+    OEM="Asus"
+    DEVICE="ZenFone Max M2"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_asus_X01AD"
+    COMMON_DEVICETREE=""
+    KERNEL="https://github.com/Rocky7842/android_kernel_asus_X01AD"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://forum.xda-developers.com/t/4643500/"
+    else
+        FORUM=""
+    fi
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
