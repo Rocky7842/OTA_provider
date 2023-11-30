@@ -37,7 +37,7 @@ if [ "$CODENAME" = "d1x" ] ; then
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_samsung_exynos9820-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
     if [ "$MAINVERSION" = "9" ] ; then
-        FORUM="https://forum.xda-developers.com/t/4530391/"
+        FORUM="https://xdaforums.com/t/4530391/"
     else
         FORUM=""
     fi
@@ -53,7 +53,7 @@ elif [ "$CODENAME" = "grus" ] ; then
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
     if [ "$MAINVERSION" = "9" ] ; then
-        FORUM="https://forum.xda-developers.com/t/4533353/"
+        FORUM="https:/xdaforums.com/t/4533353/"
     else
         FORUM=""
     fi
@@ -69,9 +69,9 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm710-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
     if [ "$MAINVERSION" = "9" ] ; then
-        FORUM="https://forum.xda-developers.com/t/4535219/"
+        FORUM="https://xdaforums.com/t/4535219/"
     elif [ "$MAINVERSION" = "10" ] ; then
-        FORUM="https://forum.xda-developers.com/t/4639873/"
+        FORUM="https://xdaforums.com/t/4639873/"
     else
         FORUM=""
     fi
@@ -87,7 +87,7 @@ elif [ "$CODENAME" = "X01AD" ] ; then
     COMMON_DEVICETREE=""
     KERNEL="https://github.com/Rocky7842/android_kernel_asus_X01AD"
     if [ "$MAINVERSION" = "10" ] ; then
-        FORUM="https://forum.xda-developers.com/t/4643500/"
+        FORUM="https://xdaforums.com/t/4643500/"
     else
         FORUM=""
     fi
