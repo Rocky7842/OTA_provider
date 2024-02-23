@@ -1,0 +1,4 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Galaxy Note10 5G (d1x)
+Device maintainers: Rocky7842
