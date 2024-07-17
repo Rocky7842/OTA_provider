@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Asus",
+      "device": "",
+      "filename": "",
+      "download": "",
+      "timestamp": "",
+      "md5": "",
+      "sha256": "",
+      "size": "",
+      "version": "",
+      "buildtype": "",
+      "forum": "",
+      "gapps": "https://github.com/MindTheGapps/14.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "",
+      "common-dt": "",
+      "kernel": ""
+    }
+  ]
+}

@@ -93,6 +93,22 @@ elif [ "$CODENAME" = "X01AD" ] ; then
     else
         FORUM=""
     fi
+elif [ "$CODENAME" = "obiwan" ] ; then
+    PROJECT="crdroid-asus-rog-phone-3"
+    OEM="Asus"
+    DEVICE="ROG Phone 3"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_asus_obiwan"
+    COMMON_DEVICETREE=""
+    KERNEL="https://github.com/Rocky7842/android_kernel_asus_sm8250"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4681840/"
+    else
+        FORUM=""
+    fi
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
