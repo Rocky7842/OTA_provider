@@ -109,6 +109,22 @@ elif [ "$CODENAME" = "obiwan" ] ; then
     else
         FORUM=""
     fi
+elif [ "$CODENAME" = "psyche" ] ; then
+    PROJECT="crdroid-xiaomi-12x"
+    OEM="Xiaomi"
+    DEVICE="12X"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_psyche"
+    COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sm8250-common"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8250"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4682358/"
+    else
+        FORUM=""
+    fi
 fi
 
 DOWNLOAD="https://sourceforge.net/projects/$PROJECT/files/crdroid-$MAINVERSION/$FILENAME/download"
