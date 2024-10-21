@@ -30,6 +30,7 @@ MAINVERSION=$(echo $VERSION | cut -f1 -d '.')
 MAINTAINER="Rocky7842"
 PAYPAL="https://www.paypal.com/paypalme/EricRocky7842"
 TELEGRAM=""
+# Remember to also setup GITHUB_ACCESS_TOKEN for use in the script!
 
 RECOVERY_IN_BOOT=false
 
