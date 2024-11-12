@@ -130,6 +130,23 @@ elif [ "$CODENAME" = "psyche" ] ; then
     fi
 
     RECOVERY_IN_BOOT=true
+elif [ "$CODENAME" = "renoir" ] ; then
+    OEM="Xiaomi"
+    DEVICE="Mi 11 Lite 5G"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_renoir"
+    COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sm8350-common"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4702507/"
+    else
+        FORUM=""
+    fi
+
+    RECOVERY_IN_BOOT=true
 fi
 
 TAG="$CODENAME-crDroid-$VERSION"
