@@ -35,7 +35,6 @@ TELEGRAM=""
 RECOVERY_IN_BOOT=false
 
 if [ "$CODENAME" = "d1x" ] ; then
-    PROJECT="crdroid-samsung-note10-5g"
     OEM="Samsung"
     DEVICE="Galaxy Note10 5G"
     BUILDTYPE="Monthly"
@@ -51,7 +50,6 @@ if [ "$CODENAME" = "d1x" ] ; then
         FORUM=""
     fi
 elif [ "$CODENAME" = "grus" ] ; then
-    PROJECT="crdroid-xiaomi-9-se"
     OEM="Xiaomi"
     DEVICE="Mi 9 SE"
     BUILDTYPE="Monthly"
@@ -69,7 +67,6 @@ elif [ "$CODENAME" = "grus" ] ; then
         FORUM=""
     fi
 elif [ "$CODENAME" = "xmsirius" ] ; then
-    PROJECT="crdroid-xiaomi-8-se"
     OEM="Xiaomi"
     DEVICE="Mi 8 SE"
     BUILDTYPE="Monthly"
@@ -87,7 +84,6 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
         FORUM=""
     fi
 elif [ "$CODENAME" = "X01AD" ] ; then
-    PROJECT="crdroid-asus-zenfone-max-m2"
     OEM="Asus"
     DEVICE="ZenFone Max M2"
     BUILDTYPE="Monthly"
@@ -103,7 +99,6 @@ elif [ "$CODENAME" = "X01AD" ] ; then
         FORUM=""
     fi
 elif [ "$CODENAME" = "obiwan" ] ; then
-    PROJECT="crdroid-asus-rog-phone-3"
     OEM="Asus"
     DEVICE="ROG Phone 3"
     BUILDTYPE="Monthly"
@@ -119,7 +114,6 @@ elif [ "$CODENAME" = "obiwan" ] ; then
         FORUM=""
     fi
 elif [ "$CODENAME" = "psyche" ] ; then
-    PROJECT="crdroid-xiaomi-12x"
     OEM="Xiaomi"
     DEVICE="12X"
     BUILDTYPE="Monthly"
