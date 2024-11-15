@@ -149,7 +149,7 @@ elif [ "$CODENAME" = "renoir" ] ; then
     RECOVERY_IN_BOOT=true
 fi
 
-TAG="$CODENAME-crDroid-$VERSION"
+TAG="$CODENAME-crDroid-$VERSION-$DATE"
 
 DOWNLOAD="https://github.com/$MAINTAINER/OTA_provider/releases/download/$TAG/$ROMFILENAME"
 RECOVERY_DOWNLOAD="https://github.com/$MAINTAINER/OTA_provider/releases/download/$TAG/recovery.img"
