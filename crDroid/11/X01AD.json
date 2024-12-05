@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Asus",
+      "device": "ZenFone Max M2",
+      "filename": "crDroidAndroid-14.0-20241203-X01AD-v10.10.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/X01AD-crDroid-10.10-20241203/crDroidAndroid-14.0-20241203-X01AD-v10.10.zip",
+      "timestamp": "1733234748",
+      "md5": "b3694a97aa15d181924a2ece2235e24e",
+      "sha256": "5515b51b4f3e24674989b88a0ee20af64d96a06ac90500db2c10efd81f73c89f",
+      "size": "1180812797",
+      "version": "10.10",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4643500/",
+      "gapps": "https://github.com/MindTheGapps/14.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/X01AD-crDroid-10.10-20241203/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_asus_X01AD",
+      "common-dt": "",
+      "kernel": "https://github.com/Rocky7842/android_kernel_asus_X01AD"
+    }
+  ]
+}

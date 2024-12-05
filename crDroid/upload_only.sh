@@ -85,6 +85,8 @@ elif [ "$CODENAME" = "X01AD" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_asus_X01AD"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4643500/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4706424/"
     else
         FORUM=""
     fi
@@ -118,11 +120,26 @@ elif [ "$CODENAME" = "psyche" ] ; then
     else
         FORUM=""
     fi
-
+    RECOVERY_IN_BOOT=true
+elif [ "$CODENAME" = "renoir" ] ; then
+    OEM="Xiaomi"
+    DEVICE="Mi 11 Lite 5G"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_renoir"
+    COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sm8350-common"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4702507/"
+    else
+        FORUM=""
+    fi
     RECOVERY_IN_BOOT=true
 fi
 
-TAG="$CODENAME-crDroid-$VERSION"
+TAG="$CODENAME-crDroid-$VERSION-$DATE"
 
 git pull
 git tag -d $TAG

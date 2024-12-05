@@ -95,6 +95,8 @@ elif [ "$CODENAME" = "X01AD" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_asus_X01AD"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4643500/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4706424/"
     else
         FORUM=""
     fi
