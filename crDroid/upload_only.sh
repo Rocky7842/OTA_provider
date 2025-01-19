@@ -38,6 +38,8 @@ if [ "$CODENAME" = "d1x" ] ; then
         FORUM="https://xdaforums.com/t/4530391/"
     elif [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4655791/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4714396/"
     else
         FORUM=""
     fi
