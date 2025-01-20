@@ -22,9 +22,9 @@ METADATA=$(echo $ROM | sed 's/'$ROMFILENAME'/ota_metadata/g' )
 TIMESTAMP=$(grep post-timestamp $METADATA | cut -f2 -d '=')
 
 OLDJSON=$(echo $ROM | sed 's/'$ROMFILENAME'/'$CODENAME'.json/g' )
-MD5=$(grep md5 "$OLDJSON" | cut -c 12- | sed 's/",//g' )
-SHA256=$(grep sha256 "$OLDJSON" | cut -c 15- | sed 's/",//g' )
-VERSION=$(grep version "$OLDJSON" | cut -c 16- | sed 's/",//g' )
+MD5=$(jq -r '.response[0].md5' "$OLDJSON")
+SHA256=$(jq -r '.response[0].sha256' "$OLDJSON")
+VERSION=$(jq -r '.response[0].version' "$OLDJSON")
 MAINVERSION=$(echo $VERSION | cut -f1 -d '.')
 
 MAINTAINER="Rocky7842"
