@@ -15,7 +15,12 @@ SIZE=$(du -b $ROM | cut -f1 -d '	')
 
 ANDROID_VERSION=$(echo $ROMFILENAME | cut -f2 -d '-')
 if [ "${ANDROID_VERSION##*.}" -eq 0 ]; then
-    ANDROID_VERSION=${ANDROID_VERSION%.*}
+    ANDROID_VERSION="${ANDROID_VERSION%.*}"
+    ANDROID_MAINVERSION=$ANDROID_VERSION
+    ANDROID_MINORVERSION="0"
+else
+    ANDROID_MAINVERSION="${ANDROID_VERSION%.*}"
+    ANDROID_MINORVERSION="${ANDROID_VERSION#*.}"
 fi
 
 METADATA=$(echo $ROM | sed 's/'$ROMFILENAME'/ota_metadata/g' )
@@ -160,13 +165,7 @@ TAG="$CODENAME-crDroid-$VERSION-$DATE"
 DOWNLOAD="https://github.com/$MAINTAINER/OTA_provider/releases/download/$TAG/$ROMFILENAME"
 RECOVERY_DOWNLOAD="https://github.com/$MAINTAINER/OTA_provider/releases/download/$TAG/recovery.img"
 
-if [ "$MAINVERSION" = "9" ] ; then
-    GAPPS="https://github.com/MindTheGapps/13.0.0-arm64/releases"
-elif [ "$MAINVERSION" = "10" ] ; then
-    GAPPS="https://github.com/MindTheGapps/14.0.0-arm64/releases"
-else
-    GAPPS="https://github.com/MindTheGapps"
-fi
+GAPPS="https://github.com/MindTheGapps/${ANDROID_MAINVERSION}.${ANDROID_MINORVERSION}.0-arm64/releases"
 
 response=$(jq -n --arg maintainer "$MAINTAINER" \
         --arg oem "$OEM" \
