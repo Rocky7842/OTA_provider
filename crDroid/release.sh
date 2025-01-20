@@ -46,6 +46,8 @@ if [ "$CODENAME" = "d1x" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_samsung_exynos9820"
     if [ "$MAINVERSION" = "9" ] ; then
         FORUM="https://xdaforums.com/t/4530391/"
+    elif [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t/4655791/"
     else
         FORUM=""
     fi
