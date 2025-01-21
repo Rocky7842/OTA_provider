@@ -72,6 +72,8 @@ elif [ "$CODENAME" = "grus" ] ; then
         FORUM="https:/xdaforums.com/t/4533353/"
     elif [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4639898/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4714612/"
     else
         FORUM=""
     fi
