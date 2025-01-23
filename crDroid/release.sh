@@ -224,7 +224,7 @@ UPLOAD_URL="https://uploads.github.com/repos/$MAINTAINER/OTA_provider/releases/$
 
 curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
      -H "Content-Type: application/octet-stream" \
-     --data-binary @"$ROM" \
+     -T "$ROM" \
      "$UPLOAD_URL?name=$ROMFILENAME"
 
 echo ""
@@ -245,7 +245,7 @@ for FILE in $FILES; do
     FILENAME=$(basename "$FILE")
     curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
          -H "Content-Type: application/octet-stream" \
-         --data-binary @"$FILE" \
+         -T "$FILE" \
          "$UPLOAD_URL?name=$FILENAME"
 done
 
