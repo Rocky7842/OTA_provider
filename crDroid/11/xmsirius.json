@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 8 SE",
+      "filename": "crDroidAndroid-14.0-20241215-xmsirius-v10.11.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/xmsirius-crDroid-10.11-20241215/crDroidAndroid-14.0-20241215-xmsirius-v10.11.zip",
+      "timestamp": "1734195619",
+      "md5": "a604cff9a2707140d1c5f5bf20b88d71",
+      "sha256": "f7350d28ddec47d3623882570701e979bcadb85235bf1c528958804b3b615ae7",
+      "size": "1276006335",
+      "version": "10.11",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4639873/",
+      "gapps": "https://github.com/MindTheGapps/14.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/xmsirius-crDroid-10.11-20241215/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_xmsirius",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm710-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    }
+  ]
+}
