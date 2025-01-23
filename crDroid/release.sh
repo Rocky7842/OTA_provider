@@ -23,8 +23,8 @@ else
     ANDROID_MINORVERSION="${ANDROID_VERSION#*.}"
 fi
 
-METADATA=$(echo $ROM | sed 's/'$ROMFILENAME'/ota_metadata/g' )
-TIMESTAMP=$(grep post-timestamp $METADATA | cut -f2 -d '=')
+METADATA=$(unzip -p "$ROM" META-INF/com/android/metadata)
+TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d '-' )
 
 OLDJSON=$(echo $ROM | sed 's/'$ROMFILENAME'/'$CODENAME'.json/g' )
 MD5=$(jq -r '.response[0].md5' "$OLDJSON")
