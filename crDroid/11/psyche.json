@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "12X",
+      "filename": "crDroidAndroid-14.0-20241214-psyche-v10.11.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/psyche-crDroid-10.11-20241214/crDroidAndroid-14.0-20241214-psyche-v10.11.zip",
+      "timestamp": "1734149144",
+      "md5": "f0ebd70e2e29f350d69d8f57befb3776",
+      "sha256": "7e82888769e24a1322a73506e127428218f777ee13227d48641075fa60bc6013",
+      "size": "1553424841",
+      "version": "10.11",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4682358/",
+      "gapps": "https://github.com/MindTheGapps/14.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/psyche-crDroid-10.11-20241214/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_psyche",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sm8250-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sm8250"
+    }
+  ]
+}

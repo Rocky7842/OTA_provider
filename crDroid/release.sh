@@ -140,6 +140,8 @@ elif [ "$CODENAME" = "psyche" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8250"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4682358/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4715823/"
     else
         FORUM=""
     fi
