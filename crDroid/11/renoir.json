@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 11 Lite 5G",
+      "filename": "crDroidAndroid-15.0-20250202-renoir-v11.1.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/renoir-crDroid-11.1-20250202/crDroidAndroid-15.0-20250202-renoir-v11.1.zip",
+      "timestamp": "1738432947",
+      "md5": "d529563704e049cd09ae32f7ebecdc6d",
+      "sha256": "cff971f4c3ae43f1c42520ad862cd1f95a9a18da8c10a19b0d3e330092d77ede",
+      "size": "1589399914",
+      "version": "11.1",
+      "buildtype": "Monthly",
+      "forum": "",
+      "gapps": "https://github.com/MindTheGapps/15.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/renoir-crDroid-11.1-20250202/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_renoir",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sm8350-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
+    }
+  ]
+}
