@@ -1,0 +1,4 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Mi 11 Lite 5G (renoir)
+Device maintainers: Rocky7842

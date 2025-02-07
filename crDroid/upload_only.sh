@@ -143,6 +143,8 @@ elif [ "$CODENAME" = "renoir" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4702507/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4716756/"
     else
         FORUM=""
     fi
