@@ -166,6 +166,21 @@ elif [ "$CODENAME" = "renoir" ] ; then
     fi
 
     RECOVERY_IN_BOOT=true
+elif [ "$CODENAME" = "platina" ] ; then
+    OEM="Xiaomi"
+    DEVICE="Mi 8 Lite"
+    BUILDTYPE="Monthly"
+    FIRMWARE=""
+    MODEM=""
+    BOOTLOADER=""
+    DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_platina"
+    COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm660-common"
+    KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm660"
+    if [ "$MAINVERSION" = "10" ] ; then
+        FORUM="https://xdaforums.com/t//"
+    else
+        FORUM=""
+    fi
 fi
 
 TAG="$CODENAME-crDroid-$VERSION-$DATE"
