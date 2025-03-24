@@ -1,28 +1,28 @@
 {
   "response": [
     {
-      "maintainer": "",
-      "oem": "",
-      "device": "",
-      "filename": "",
-      "download": "",
-      "timestamp": "",
-      "md5": "",
-      "sha256": "",
-      "size": "",
-      "version": "",
-      "buildtype": "",
-      "forum": "",
-      "gapps": "",
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 8 Lite",
+      "filename": "crDroidAndroid-14.0-20250324-platina-v10.13.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/platina-crDroid-10.13-20250324/crDroidAndroid-14.0-20250324-platina-v10.13.zip",
+      "timestamp": "1742802202",
+      "md5": "eceae5418407fee84e8c71b621570e28",
+      "sha256": "c983dd37d2f7c03f6441162f007cf3339aa6ba21a734cba2b6ac39f2db047813",
+      "size": "1211312128",
+      "version": "10.13",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t//",
+      "gapps": "https://github.com/MindTheGapps/14.0.0-arm64/releases",
       "firmware": "",
       "modem": "",
       "bootloader": "",
-      "recovery": "",
-      "paypal": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/platina-crDroid-10.13-20250324/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
       "telegram": "",
-      "dt": "",
-      "common-dt": "",
-      "kernel": ""
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_platina",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm660-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm660"
     }
   ]
 }
