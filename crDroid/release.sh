@@ -177,7 +177,7 @@ elif [ "$CODENAME" = "platina" ] ; then
     COMMON_DEVICETREE="https://github.com/Rocky7842/android_device_xiaomi_sdm660-common"
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm660"
     if [ "$MAINVERSION" = "10" ] ; then
-        FORUM="https://xdaforums.com/t//"
+        FORUM="https://xdaforums.com/t/4726902/"
     else
         FORUM=""
     fi
