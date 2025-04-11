@@ -178,6 +178,8 @@ elif [ "$CODENAME" = "platina" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sdm660"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4726902/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4730430/"
     else
         FORUM=""
     fi
