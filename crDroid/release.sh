@@ -26,10 +26,9 @@ fi
 METADATA=$(unzip -p "$ROM" META-INF/com/android/metadata)
 TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d '-' )
 
-OLDJSON=$(echo $ROM | sed 's/'$ROMFILENAME'/'$CODENAME'.json/g' )
-MD5=$(jq -r '.response[0].md5' "$OLDJSON")
-SHA256=$(jq -r '.response[0].sha256' "$OLDJSON")
-VERSION=$(jq -r '.response[0].version' "$OLDJSON")
+MD5=$(md5sum "$ROM" | cut -d ' ' -f1)
+SHA256=$(sha256sum "$ROM" | cut -d ' ' -f1)
+VERSION=$(echo $ROMFILENAME | cut -d '-' -f 5 | sed 's/v\([0-9]\+\.[0-9]\+\).*/\1/')
 MAINVERSION=$(echo $VERSION | cut -f1 -d '.')
 
 MAINTAINER="Rocky7842"
