@@ -124,6 +124,8 @@ elif [ "$CODENAME" = "obiwan" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_asus_sm8250"
     if [ "$MAINVERSION" = "10" ] ; then
         FORUM="https://xdaforums.com/t/4681840/"
+    elif [ "$MAINVERSION" = "11" ] ; then
+        FORUM="https://xdaforums.com/t/4732489/"
     else
         FORUM=""
     fi
