@@ -1,0 +1,4 @@
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Mi 8 SE (xmsirius)
+Device maintainers: Rocky7842

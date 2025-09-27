@@ -78,6 +78,8 @@ elif [ "$CODENAME" = "xmsirius" ] ; then
         FORUM="https://xdaforums.com/t/4639873/"
     elif [ "$MAINVERSION" = "11" ] ; then
         FORUM="https://xdaforums.com/t/4714901/"
+    elif [ "$MAINVERSION" = "12" ] ; then
+        FORUM="https://xdaforums.com/t/4761292/"
     else
         FORUM=""
     fi
