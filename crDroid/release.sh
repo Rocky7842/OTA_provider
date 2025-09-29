@@ -111,6 +111,8 @@ elif [ "$CODENAME" = "X01AD" ] ; then
         FORUM="https://xdaforums.com/t/4643500/"
     elif [ "$MAINVERSION" = "11" ] ; then
         FORUM="https://xdaforums.com/t/4706424/"
+    elif [ "$MAINVERSION" = "12" ] ; then
+        FORUM="https://xdaforums.com/t/4761524/"
     else
         FORUM=""
     fi
