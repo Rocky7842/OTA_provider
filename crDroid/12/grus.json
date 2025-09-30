@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 9 SE",
+      "filename": "crDroidAndroid-15.0-20250913-grus-v11.9.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/grus-crDroid-11.9-20250913/crDroidAndroid-15.0-20250913-grus-v11.9.zip",
+      "timestamp": "1757748126",
+      "md5": "f37584f68d1e172beaa01c579ae23c74",
+      "sha256": "e54f5db78df6c54ea1494afd392f2b062a8ae24d0f31fccd008409a83d683c68",
+      "size": "1562368901",
+      "version": "11.9",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4714612/",
+      "gapps": "https://github.com/MindTheGapps/15.0.0-arm64/releases",
+      "firmware": "https://androidfilehost.com/?fid=2981970449027569929",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/grus-crDroid-11.9-20250913/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_grus",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm710-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm710"
+    }
+  ]
+}
