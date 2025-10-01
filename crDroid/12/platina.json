@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 8 Lite",
+      "filename": "crDroidAndroid-15.0-20250927-platina-v11.9.zip",
+      "download": "https://github.com/Rocky7842/OTA_provider/releases/download/platina-crDroid-11.9-20250927/crDroidAndroid-15.0-20250927-platina-v11.9.zip",
+      "timestamp": "1758939179",
+      "md5": "99781df32d7ec36764c9a98f98208892",
+      "sha256": "51b89331208ddd8d7953b66dc785196e97b35c488ad21ea911bf54e261ae493e",
+      "size": "1307649294",
+      "version": "11.9",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4730430/",
+      "gapps": "https://github.com/MindTheGapps/15.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "https://github.com/Rocky7842/OTA_provider/releases/download/platina-crDroid-11.9-20250927/recovery.img",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_platina",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sdm660-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sdm660"
+    }
+  ]
+}
