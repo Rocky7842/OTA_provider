@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Xiaomi",
+      "device": "Mi 11 Lite 5G NE / Mi 11 LE",
+      "filename": "",
+      "download": "",
+      "timestamp": "",
+      "md5": "",
+      "sha256": "",
+      "size": "",
+      "version": "",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4766781/",
+      "gapps": "https://github.com/MindTheGapps/16.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_xiaomi_lisa",
+      "common-dt": "https://github.com/Rocky7842/android_device_xiaomi_sm8350-common",
+      "kernel": "https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
+    }
+  ]
+}
