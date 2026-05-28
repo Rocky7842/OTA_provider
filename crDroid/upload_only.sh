@@ -22,7 +22,9 @@ MAINVERSION=$(echo $VERSION | cut -f1 -d '.')
 MAINTAINER="Rocky7842"
 # Remember to also setup GITHUB_ACCESS_TOKEN for use in the script!
 
-RECOVERY_IN_BOOT=false
+RECOVERY_AS_BOOT=false
+RECOVERY_USE_VENDOR_BOOT=true # Only valid when RECOVERY_AS_BOOT is selected
+RECOVERY_NEED_DTBO=false # RECOVERY_AS_BOOT will select RECOVERY_NEED_DTBO
 
 if [ "$CODENAME" = "d1x" ] ; then
     OEM="Samsung"
@@ -144,7 +146,7 @@ elif [ "$CODENAME" = "psyche" ] ; then
     else
         FORUM=""
     fi
-    RECOVERY_IN_BOOT=true
+    RECOVERY_AS_BOOT=true
 elif [ "$CODENAME" = "renoir" ] ; then
     OEM="Xiaomi"
     DEVICE="Mi 11 Lite 5G"
@@ -162,7 +164,7 @@ elif [ "$CODENAME" = "renoir" ] ; then
     else
         FORUM=""
     fi
-    RECOVERY_IN_BOOT=true
+    RECOVERY_AS_BOOT=true
 elif [ "$CODENAME" = "platina" ] ; then
     OEM="Xiaomi"
     DEVICE="Mi 8 Lite"
@@ -198,7 +200,7 @@ elif [ "$CODENAME" = "lisa" ] ; then
         FORUM=""
     fi
 
-    RECOVERY_IN_BOOT=true
+    RECOVERY_AS_BOOT=true
 fi
 
 TAG="$CODENAME-crDroid-$VERSION-$DATE"
@@ -236,22 +238,38 @@ echo ""
 echo "------ROM uploaded------"
 echo ""
 
-if [ "$RECOVERY_IN_BOOT" = false ] ; then
+if [ "$RECOVERY_AS_BOOT" = false ] ; then
     RECOVERY="${ROM_DIR}/recovery.img"
-    FILES="$RECOVERY"
+    FILES=("$RECOVERY")
 else
     BOOT="${ROM_DIR}/boot.img"
-    VENDOR_BOOT="${ROM_DIR}/vendor_boot.img"
-    DTBO="${ROM_DIR}/dtbo.img"
-    FILES="$BOOT $VENDOR_BOOT $DTBO"
+    FILES=("$BOOT")
+
+    if [ "$RECOVERY_USE_VENDOR_BOOT" = true ] ; then
+        VENDOR_BOOT="${ROM_DIR}/vendor_boot.img"
+        FILES+=("$VENDOR_BOOT")
+    fi  
+
+    # DTBO must be needed for generic boot recovery
+    RECOVERY_NEED_DTBO=true
 fi
 
-for FILE in $FILES; do
-    FILENAME=$(basename "$FILE")
-    curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
-         -H "Content-Type: application/octet-stream" \
-         -T "$FILE" \
-         "$UPLOAD_URL?name=$FILENAME"
+if [ "$RECOVERY_NEED_DTBO" = true ] ; then
+    DTBO="${ROM_DIR}/dtbo.img"
+    FILES+=("$DTBO")
+fi
+
+for FILE in "${FILES[@]}"; do
+    if [ -f "$FILE" ]; then
+        FILENAME=$(basename "$FILE")
+        echo "Uploading $FILENAME..."
+        curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
+             -H "Content-Type: application/octet-stream" \
+             -T "$FILE" \
+             "$UPLOAD_URL?name=$FILENAME"
+    else
+        echo "Warning: File not found: $FILE"
+    fi
 done
 
 echo ""
