@@ -286,7 +286,7 @@ RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
        "tag_name": "'"$TAG"'",
        "target_commitish": "main",
        "name": "'"${ROMFILENAME%.zip}"'",
-       "body": "ROM: crDroid<br>Codename: '"$CODENAME"'<br>Device: '"$DEVICE"' <br>crDroid version: '"$MAINVERSION"' <br>Android version: '"$ANDROID_VERSION"' <br>Variant: VANILLA",
+       "body": "ROM: crDroid<br>Codename: '"$CODENAME"'<br>Device: '"$DEVICE"' <br>crDroid version: '"$MAINVERSION"' <br>Android version: '"$ANDROID_VERSION"' <br>Security patch level: '"$OS_PATCH_LEVEL"' <br>Variant: VANILLA",
        "draft": false,
        "prerelease": false
      }' \
