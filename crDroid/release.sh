@@ -36,7 +36,9 @@ else
 fi
 
 METADATA=$(unzip -p "$ROM" META-INF/com/android/metadata)
-TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' | cut -f1 -d '-' )
+TIMESTAMP=$(echo "$METADATA" | grep post-timestamp | cut -f2 -d '=' )
+OS_PATCH_LEVEL=$(echo "$METADATA" | grep post-security-patch-level | cut -f2 -d '=' )
+OS_SDK_LEVEL=$(echo "$METADATA" | grep post-sdk-level | cut -f2 -d '=' )
 
 MD5=$(md5sum "$ROM" | cut -d ' ' -f1)
 SHA256=$(sha256sum "$ROM" | cut -d ' ' -f1)
@@ -249,6 +251,8 @@ if [ "$UPLOAD_FILE_ONLY" != true ] ; then
             --arg sha256 "$SHA256" \
             --arg size "$SIZE" \
             --arg version "$VERSION" \
+            --arg os_patch_level "$OS_PATCH_LEVEL" \
+            --arg os_sdk_level "$OS_SDK_LEVEL" \
             --arg buildtype "$BUILDTYPE" \
             --arg forum "$FORUM" \
             --arg gapps "$GAPPS" \
