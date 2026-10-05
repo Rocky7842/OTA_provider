@@ -1,0 +1,30 @@
+{
+  "response": [
+    {
+      "maintainer": "Rocky7842",
+      "oem": "Asus",
+      "device": "ROG Phone 3",
+      "filename": "",
+      "download": "",
+      "timestamp": "",
+      "md5": "",
+      "sha256": "",
+      "size": "",
+      "version": "",
+      "os_patch_level": "",
+      "os_sdk_level": "",
+      "buildtype": "Monthly",
+      "forum": "https://xdaforums.com/t/4803942/",
+      "gapps": "https://github.com/MindTheGapps/17.0.0-arm64/releases",
+      "firmware": "",
+      "modem": "",
+      "bootloader": "",
+      "recovery": "",
+      "paypal": "https://www.paypal.com/paypalme/EricRocky7842",
+      "telegram": "",
+      "dt": "https://github.com/Rocky7842/android_device_asus_obiwan",
+      "common-dt": "",
+      "kernel": "https://github.com/Rocky7842/android_kernel_asus_sm8250"
+    }
+  ]
+}

@@ -152,6 +152,8 @@ elif [ "$CODENAME" = "obiwan" ] ; then
         FORUM="https://xdaforums.com/t/4732489/"
     elif [ "$MAINVERSION" = "12" ] ; then
         FORUM="https://xdaforums.com/t/4761952/"
+    elif [ "$MAINVERSION" = "13" ] ; then
+        FORUM="https://xdaforums.com/t/4803942/"
     else
         FORUM=""
     fi
