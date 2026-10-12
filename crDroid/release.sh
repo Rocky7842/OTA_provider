@@ -173,6 +173,8 @@ elif [ "$CODENAME" = "psyche" ] ; then
         FORUM="https://xdaforums.com/t/4715823/"
     elif [ "$MAINVERSION" = "12" ] ; then
         FORUM="https://xdaforums.com/t/4762076/"
+    elif [ "$MAINVERSION" = "13" ] ; then
+        FORUM="https://xdaforums.com/t/4804793/"
     else
         FORUM=""
     fi
