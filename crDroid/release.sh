@@ -230,6 +230,8 @@ elif [ "$CODENAME" = "lisa" ] ; then
     KERNEL="https://github.com/Rocky7842/android_kernel_xiaomi_sm8350"
     if [ "$MAINVERSION" = "12" ] ; then
         FORUM="https://xdaforums.com/t/4766781/"
+    elif [ "$MAINVERSION" = "13" ] ; then
+        FORUM="https://xdaforums.com/t/4805156/"
     else
         FORUM=""
     fi
