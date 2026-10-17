@@ -215,6 +215,8 @@ elif [ "$CODENAME" = "platina" ] ; then
         FORUM="https://xdaforums.com/t/4730430/"
     elif [ "$MAINVERSION" = "12" ] ; then
         FORUM="https://xdaforums.com/t/4761871/"
+    elif [ "$MAINVERSION" = "13" ] ; then
+        FORUM="https://xdaforums.com/t/4805332/"
     else
         FORUM=""
     fi
