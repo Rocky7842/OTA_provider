@@ -288,7 +288,7 @@ if [ "$UPLOAD_FILE_ONLY" != true ] ; then
 fi
 git tag -d $TAG
 git tag $TAG
-git push origin main -f --tags
+git push https://${GITHUB_ACCESS_TOKEN}@github.com/${MAINTAINER}/OTA_provider.git main -f --tags
 
 RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
      -H "Content-Type: application/json" \
