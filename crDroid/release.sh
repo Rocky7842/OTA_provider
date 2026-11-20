@@ -342,7 +342,7 @@ fi
 for FILE in "${FILES[@]}"; do
     if [ -f "$FILE" ]; then
         FILENAME=$(basename "$FILE")
-        echo "Uploading $FILENAME..."
+        echo -e "\n\nUploading $FILENAME..."
         curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
              -H "Content-Type: application/octet-stream" \
              -T "$FILE" \
